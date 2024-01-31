@@ -5,3 +5,32 @@ html {
   margin: 0px;
   padding: 0px;
 }
+#container {
+  display: grid;
+
+  grid-template-rows: 1fr 1fr 1fr;
+
+  grid-template-areas: 
+  
+    "header "
+    "main"
+    "footer";
+    width: fit-content;
+
+}
+
+.app{
+  #h1 {
+    float: left;
+    text-align: left !important;
+  }
+  #li {
+    float: right;
+    text-align: right !important;
+  }
+
+  grid-area: header
+
+}
+
+
